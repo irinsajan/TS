@@ -7,17 +7,17 @@ var platform1,platform2;
 var block1,block2,block3;
 
 function setup() {
-  createCanvas(800,400);
+  createCanvas(1200,600);
 
   engine = Engine.create();
 	world = engine.world;
 
-  platform1 = new Ground(200,200,100,20);
-  platform2 = new Ground(400,600,100,20);
+  platform1 = new Ground(500,500,200,20);
+  platform2 = new Ground(800,350,200,20);
 
-  block1 = new Block(200,300,100,20);
-  block2 = new Block(400,600,100,20);
-  block3 = new Block(600,900,100,20);
+  block1 = new Box(515,100);
+  block2 = new Box(545,100);
+  block3 = new Box(575,100);
 
   Engine.run(engine);
  
