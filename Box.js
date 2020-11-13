@@ -13,6 +13,7 @@ class Box{
         push();
         translate(pos.x,pos.y);
         rotate(angle);
+        fill("pink");
         rectMode(CENTER);
         rect(0,0,30,40);
         pop();
